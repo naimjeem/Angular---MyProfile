@@ -12,6 +12,8 @@
     <button (click)="onClick()">Add Skills</button>
   </form>
   <ul>
-    <li *ngFor="let skill of skills">{{skill}}</li>
+    <li *ngFor="let skill of skills; let i = index">{{i+1}} {{skill}}
+      <button (click)="deleteSkill(skill)">X</button>
+    </li>
   </ul>
 </div>

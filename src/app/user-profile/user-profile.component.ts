@@ -12,7 +12,7 @@ export class UserProfileComponent implements OnInit {
   profession: string;
   email: string;
   website: string;
-  skills: string[];
+  skills: any[];
 
 
   constructor() {
@@ -36,8 +36,17 @@ export class UserProfileComponent implements OnInit {
 
   addSkill(skill) {
     this.skills.unshift(skill);
-    console.log('new skill' + skill + ' is added');
+    console.log('new skill ' + skill + ' is added');
     return false;
+  }
+
+  deleteSkill(skill) {
+    for (let i = 0; i < this.skills.length; i++) {
+      if (this.skills[i] === skill) {
+        this.skills.splice(i, 1);
+        console.log('skill ' + skill +' is deleted');
+      }
+    }
   }
 
 }
