@@ -16,4 +16,23 @@
       <button (click)="deleteSkill(skill)">X</button>
     </li>
   </ul>
+  <h2>Edit</h2>
+  <form>
+    <div>
+      <label for="">Name</label>
+      <input type="text" [(ngModel)]="name" name="name" >
+    </div>
+    <div>
+      <label for="">Age</label>
+      <input type="number" [(ngModel)]="age" name="age">
+    </div>
+    <div>
+      <label for="">Website</label>
+      <input type="text" [(ngModel)]="website" name="website">
+    </div>
+    <div>
+      <label for="">Email</label>
+      <input type="email" [(ngModel)]="email" name="email">
+    </div>
+  </form>
 </div>

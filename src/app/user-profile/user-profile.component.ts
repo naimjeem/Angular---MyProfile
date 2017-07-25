@@ -44,7 +44,7 @@ export class UserProfileComponent implements OnInit {
     for (let i = 0; i < this.skills.length; i++) {
       if (this.skills[i] === skill) {
         this.skills.splice(i, 1);
-        console.log('skill ' + skill +' is deleted');
+        console.log('skill ' + skill + ' is deleted');
       }
     }
   }
