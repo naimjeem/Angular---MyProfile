@@ -30,4 +30,14 @@ export class UserProfileComponent implements OnInit {
     this.skills = ['Angular', 'React', 'Node.js', 'Git', 'Meteor', 'React Native'];
   }
 
+  onclick() {
+    console.log('');
+  }
+
+  addSkill(skill) {
+    this.skills.unshift(skill);
+    console.log('new skill' + skill + ' is added');
+    return false;
+  }
+
 }
