@@ -1,0 +1,13 @@
+<div>
+  <h1>{{name}}</h1>
+  <ul>
+    <li>Profession: {{profession}}</li>
+    <li>Age: {{age}}</li>
+    <li>Website: <a href="http://{{website}}">{{website}}</a></li>
+    <li>Email: {{email}}</li>
+  </ul>
+  <h3>Skills</h3>
+  <ul>
+    <li *ngFor="let skill of skills">{{skill}}</li>
+  </ul>
+</div>
