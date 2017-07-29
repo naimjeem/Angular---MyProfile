@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.container{
+  padding: 100px;
+  margin: 50px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: bold;
+  box-shadow: 0px 8px 8px 0 rgba(55, 55, 148, 0.34);
+  color: #030303;
+}
+
+form{
+  text-align: left;
+  justify-content: space-around;
+  input{
+    background: #f7f7f7;
+    padding: 10px;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+button{
+  background: darkgray;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+ul{
+  text-align: left;
+  li{
+    list-style: none;
+  }
+}
